@@ -13,12 +13,12 @@
 
 
 <header>
-    <a href="#"><img src="https://github.com/JairImh/Trabajo-Practico-Static-Page/blob/main/images/logo.png" alt="Logo "></a>
+    <a href="#"><img src="images/logo.png" alt="Logo "></a>
     <div class="nav-links">
         <ul>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Reserva tu turno</a></li>
-            <li><a href="#">Encontranos aquí</a></li>
+            <li><a href="#conteiner-sobre-nosotros">Sobre Nosotros</a></li>
+            <li><a href="#conteiner-turnos">Reserva tu turno</a></li>
+            <li><a href="#conteiner-ubicacion">Encontranos aquí</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </div>
@@ -30,7 +30,7 @@
     <div class="conteiner-sobre-nosotros">
 
         <aside>
-            <img src="https://github.com/JairImh/Trabajo-Practico-Static-Page/blob/main/images/sobre-nosotros.jpg" alt="Corte de pelo">
+            <img src="/images/sobre-nosotros.jpg" alt="Corte de pelo">
         </aside>
 
         <main>
@@ -69,11 +69,19 @@
     </div>
     <div class="conteiner-turnos">
         <h2>RESERVA TU TURNO</h2>
+        <div class="box-calendar">
+            <label for="">elegi el dia y horario que quieras reservar</label>
+            <input type="datetime-local" name="Dia" id="">
 
+            <button>ENVIAR</button>
+        </div>
+        
     </div>
 
     <div class="conteiner-ubicacion">
         <h2>DONDE ENCONTRARNOS</h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1746463200906!6m8!1m7!1s_LYVYOGY49Cilq-m0_QQVg!2m2!1d-31.40242315629828!2d-61.08397734265272!3f176.46551300504314!4f-5.083404341412745!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </body> 
 <footer>
