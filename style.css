@@ -52,7 +52,7 @@ header img {
 
 body {
     font: bold;
-    background-color: #f0f0f3;;
+    background-color: #f0f0f3;    
 }
 
 h1 {
@@ -72,8 +72,8 @@ h1 {
 }
 
 aside{
-        width: 30%;
-        height: auto;
+        width: 70vh;
+        height: 70vh;
 
         background-color: #f0f0f3;
         box-shadow: 10px 10px 30px 0 #6e7f8d;
@@ -95,8 +95,8 @@ aside img {
 }
 
 main {
-        width: 40%;
-        height: auto;
+        width: 100vh;
+        height: 70vh;
 
         background-color: #f0f0f3;
         box-shadow: 10px 10px 30px 0 #6e7f8d;
@@ -104,9 +104,12 @@ main {
         margin: 10px;
 }
 
+main article {
+    align-content: center;
+}
+
 main article h2{
     text-align: center;
-    margin-right: 10px;
 
     font-size: 30px;
     margin:20px 0 0 20px;
@@ -114,16 +117,14 @@ main article h2{
 
 main article p {
     text-align: left;
-    margin: 30px;
+    margin: 2vh 10vh;
 }
 
 main article ul li {
     list-style: none;
-    margin-left: 40%;
     text-align:left;
 
-
-
+    margin-left: 12vh;
 }
 main article ul li a {
     text-decoration: none;
@@ -144,35 +145,44 @@ main article ul li a:hover {
     height: 500px;
     background-color: #000;
     color: #f0f0f3;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .conteiner-turnos h2 {
     text-align: center;
-    margin: 10px 0 10px 0;
 }
 
-.conteiner-turnos .box-calendar {
-    text-align: center;
-    align-items: center;
-    display:grid;
-    margin: 5px 35%;
-    top: 40%;
-    gap: 6px;
-}
 
 input {
     font-family:"Cal Sans", sans-serif ;
     height: 30px;
-    text-align: center;
+    width: 400px;
     background-color: #6e7f8d;
+
 }
 
 button {
     border-color: #000;
     background-color: #6e7f8d;
+    width: 400px;
     font-family:"Cal Sans", sans-serif ;
     height: 30px;
 }
 
+.box-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+    margin-top: 1.4em;
+    border:1px solid #f1f1f1;
+    border-radius: 10px;
+}
 
 
 
@@ -206,4 +216,9 @@ footer {
     background-color: #000;
 
     z-index: 1;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
 }
